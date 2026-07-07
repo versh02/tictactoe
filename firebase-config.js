@@ -18,7 +18,7 @@
 // is controlled separately by the rules in database.rules.json.
 // ---------------------------------------------------------------
 
-export  const firebaseConfig = {
+export const firebaseConfig = {
     apiKey: "AIzaSyBU5haR7-p45DnaKqIFf4l1LM6xcXX30Y0",
     authDomain: "tictacktoe-5ce32.firebaseapp.com",
     databaseURL: "https://tictacktoe-5ce32-default-rtdb.firebaseio.com",
@@ -26,5 +26,4 @@ export  const firebaseConfig = {
     storageBucket: "tictacktoe-5ce32.firebasestorage.app",
     messagingSenderId: "209499752747",
     appId: "1:209499752747:web:531185c5429d9fa2d8dd6e",
-    measurementId: "G-Q7ELGWXRG0"
-  };
+};
