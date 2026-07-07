@@ -18,7 +18,7 @@
 // is controlled separately by the rules in database.rules.json.
 // ---------------------------------------------------------------
 
-const firebaseConfig = {
+export const firebaseConfig = {
     apiKey: "AIzaSyBU5haR7-p45DnaKqIFf4l1LM6xcXX30Y0",
     authDomain: "tictacktoe-5ce32.firebaseapp.com",
     databaseURL: "https://tictacktoe-5ce32-default-rtdb.firebaseio.com",
