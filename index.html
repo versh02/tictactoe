@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tic · Tac · Toe — Play Remotely</title>
+<meta name="description" content="A real-time, two-player tic-tac-toe game you can play with someone anywhere." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main class="sheet">
+  <p class="eyebrow">Two-player · Real-time</p>
+  <h1>TIC<span class="dot">·</span>TAC<span class="dot">·</span>TOE</h1>
+
+  <!-- LOBBY -->
+  <section class="lobby-screen" id="lobbyScreen">
+    <div class="lobby-panel">
+      <h2>Start a room</h2>
+      <button class="primary" id="createRoomBtn" style="width:100%">Create room</button>
+      <p class="helper">You'll get a short code. Send it to the person you're playing with.</p>
+    </div>
+
+    <div class="lobby-panel">
+      <h2>Join a room</h2>
+      <div class="field-row">
+        <input type="text" id="joinCodeInput" placeholder="Enter code" maxlength="6" autocomplete="off" />
+        <button class="ghost" id="joinRoomBtn">Join</button>
+      </div>
+      <p class="error-text" id="lobbyError"></p>
+    </div>
+  </section>
+
+  <!-- GAME -->
+  <section class="game-screen" id="gameScreen">
+    <div class="title-block">
+      <div class="room-tag">
+        ROOM&nbsp;<b id="roomCodeLabel">—</b>
+        <button class="ghost" id="copyCodeBtn" title="Copy room code">Copy</button>
+      </div>
+      <button class="ghost" id="leaveBtn">Leave</button>
+    </div>
+
+    <div class="status-line" id="statusLine">
+      <span class="turn-dot" id="turnDot"></span>
+      <span id="statusText" aria-live="polite">Setting up…</span>
+    </div>
+
+    <div class="board-wrap">
+      <div class="board" id="board" role="group" aria-label="Tic-tac-toe board"></div>
+      <svg class="win-overlay" id="winOverlay" viewBox="0 0 300 300"></svg>
+    </div>
+
+    <div class="game-footer">
+      <span class="result-text" id="resultText"></span>
+      <div class="footer-actions" id="footerActions"></div>
+    </div>
+
+    <p class="hint" id="rematchHint"></p>
+  </section>
+</main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
