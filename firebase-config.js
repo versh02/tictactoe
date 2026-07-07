@@ -26,5 +26,4 @@ const firebaseConfig = {
     storageBucket: "tictacktoe-5ce32.firebasestorage.app",
     messagingSenderId: "209499752747",
     appId: "1:209499752747:web:531185c5429d9fa2d8dd6e",
-    measurementId: "G-Q7ELGWXRG0"
   };
