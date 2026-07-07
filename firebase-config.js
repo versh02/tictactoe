@@ -18,12 +18,13 @@
 // is controlled separately by the rules in database.rules.json.
 // ---------------------------------------------------------------
 
-export const firebaseConfig = {
-  apiKey: "PASTE_YOUR_API_KEY",
-  authDomain: "PASTE_YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://PASTE_YOUR_PROJECT-default-rtdb.firebaseio.com",
-  projectId: "PASTE_YOUR_PROJECT",
-  storageBucket: "PASTE_YOUR_PROJECT.appspot.com",
-  messagingSenderId: "PASTE_YOUR_SENDER_ID",
-  appId: "PASTE_YOUR_APP_ID"
-};
+const firebaseConfig = {
+    apiKey: "AIzaSyBU5haR7-p45DnaKqIFf4l1LM6xcXX30Y0",
+    authDomain: "tictacktoe-5ce32.firebaseapp.com",
+    databaseURL: "https://tictacktoe-5ce32-default-rtdb.firebaseio.com",
+    projectId: "tictacktoe-5ce32",
+    storageBucket: "tictacktoe-5ce32.firebasestorage.app",
+    messagingSenderId: "209499752747",
+    appId: "1:209499752747:web:531185c5429d9fa2d8dd6e",
+    measurementId: "G-Q7ELGWXRG0"
+  };
